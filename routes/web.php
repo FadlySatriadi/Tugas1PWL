@@ -6,6 +6,7 @@ use App\Http\Controllers\BeautyController;
 use App\Http\Controllers\CareController; 
 use App\Http\Controllers\BabyController; 
 use App\Http\Controllers\UserController; 
+use App\Http\Controllers\TransaksiController; 
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,4 @@ Route::prefix('category') -> group(function () {
 });
 
 Route::get('/user/{id}/name/{name}', [UserController::class,'index']);
+Route::get('/transaksi', [TransaksiController::class,'index']);
